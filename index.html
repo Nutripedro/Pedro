@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Requisição de Exames – Nutripsi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Requisição de Exames – Nutripsi</h1>
+    <div id="paciente-dados">
+      <input type="text" id="nome" placeholder="Nome do paciente">
+      <input type="number" id="idade" placeholder="Idade">
+      <input type="number" id="peso" placeholder="Peso (kg)">
+      <input type="number" id="altura" placeholder="Altura (cm)">
+    </div>
+  </header>
+
+  <main>
+    <form id="exames-form">
+      <fieldset><legend>Selecione os exames:</legend>
+        <label><input type="checkbox" name="exames" value="hemograma"> Hemograma completo</label>
+        <label><input type="checkbox" name="exames" value="lipidico"> Perfil lipídico</label>
+        <label><input type="checkbox" name="exames" value="vitaminas"> Vitaminas</label>
+        <label><input type="checkbox" name="exames" value="minerais"> Minerais</label>
+        <label><input type="checkbox" name="exames" value="hepatica"> Função hepática</label>
+        <label><input type="checkbox" name="exames" value="renal"> Função renal</label>
+        <label><input type="checkbox" name="exames" value="tireoide"> Tireoide</label>
+        <label><input type="checkbox" name="exames" value="inflamatorios"> Marcadores inflamatórios</label>
+        <label><input type="checkbox" name="exames" value="pancreatica"> Função pancreática</label>
+        <label><input type="checkbox" name="exames" value="insulina"> Glicemia / Insulina / HOMA</label>
+        <label><input type="checkbox" name="exames" value="hba1c"> Hemoglobina Glicada (HbA1c)</label>
+      </fieldset>
+    </form>
+    <button id="btn-export-word">Exportar para Word (.docx)</button>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
